@@ -1,0 +1,475 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Hikes</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS for additional styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Indian Hikes</a>
+                <input type="text" placeholder="search">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#treks">Treks</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#btn">Itinerary</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#health-measures">Health Measures</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#blogs">Blogs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="text-center py-5 bg-light">
+        <h1 class="display-4">Explore Breathtaking Indian Treks</h1>
+        <p>Join us to experience the best trekking adventures across India.</p>
+        <video controls class="img-fluid rounded shadow-sm">
+            <source src="./857195-hd_1280_720_25fps copy.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- Display current Date and Time -->
+        <p id="current-time"></p>
+    </section>
+
+    <!-- Treks Section -->
+    <section id="treks" class="my-5">
+        <h1 class="text-center mb-4" >Popular Treks</h1>
+        <div class="container">
+            <div class="row">
+                <!-- Kedarkantha Trek -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="trek">
+                        <h3>Kedarkantha Trek</h3>
+                        <div class="gallery mb-3">
+                            <img src="./Hike Pics/IMG-20241130-WA0005.jpg" alt="Kedarkantha" class="img-fluid rounded shadow-sm">
+                            <img src="./Hike Pics/IMG-20241130-WA0006.jpg" alt="Kedarkantha" class="img-fluid rounded shadow-sm mt-3">
+                            <img src="./Hike Pics/IMG-20241130-WA0007.jpg" alt="Kedarkantha" class="img-fluid rounded shadow-sm mt-3">
+                        </div>
+                        <p>A mesmerizing winter trek in Uttarakhand known for its scenic views and snow trails.</p>
+                        <video controls class="img-fluid rounded shadow-sm mt-3">
+                            <source src="./5895518-uhd_3840_2160_25fps.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h4 class="mt-3">Special Attractions:</h4>
+                        <ul>
+                            <li>Snow-covered trails</li>
+                            <li>Summit sunrise view</li>
+                            <li>Camping under starlit skies</li>
+                        </ul>
+                        <h4>Why Visit?</h4>
+                        <p>One of the best treks for beginners and adventure lovers with breathtaking summit views.</p>
+                        <h4>Price & Duration:</h4>
+                        <p>Price: ₹10,000 | Duration: 6 Days</p>
+                        <h4>Eligibility:</h4>
+                        <p>Suitable for beginners and experienced trekkers, aged 10+.</p>
+                        <button id="btn">Book now</button>
+                    </div>
+                </div>
+
+                <!-- Hampta Pass Trek -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="trek">
+                        <h3>Hampta Pass Trek</h3>
+                        <div class="gallery mb-3">
+                            <img src="./Hike Pics/IMG-20241130-WA0002.jpg" alt="Hampta Pass" class="img-fluid rounded shadow-sm">
+                            <img src="./Hike Pics/IMG-20241130-WA0008.jpg" alt="Hampta Pass" class="img-fluid rounded shadow-sm mt-3">
+                            <img src="./Hike Pics/IMG-20241130-WA0004.jpg" alt="Hampta Pass" class="img-fluid rounded shadow-sm mt-3">
+                        </div>
+                        <p>A thrilling trek in Himachal Pradesh offering stunning landscape transitions.</p>
+                        <video controls class="img-fluid rounded shadow-sm mt-3">
+                            <source src="./2110772-uhd_3840_2160_30fps.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h4 class="mt-3">Special Attractions:</h4>
+                        <ul>
+                            <li>River crossings</li>
+                            <li>Lush green valleys</li>
+                            <li>Snow-covered mountain passes</li>
+                        </ul>
+                        <h4>Why Visit?</h4>
+                        <p>Perfect for adventure seekers looking to explore diverse terrains and high-altitude beauty.</p>
+                        <h4>Price & Duration:</h4>
+                        <p>Price: ₹12,000 | Duration: 7 Days</p>
+                        <h4>Eligibility:</h4>
+                        <p>Moderate difficulty, recommended for trekkers aged 12+ with basic fitness.</p>
+                        <button id="btn">Book now</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="trek">
+                        <h3>Brahmatal Trek</h3>
+                        <div class="gallery mb-3">
+                            <img src="./Hike Pics/IMG-20241130-WA0008.jpg" alt="Kedarkantha" class="img-fluid rounded shadow-sm">
+                            <img src="./Hike Pics/IMG-20241130-WA0008.jpg" alt="Kedarkantha" class="img-fluid rounded shadow-sm mt-3">
+                            <img src="./Hike Pics/WhatsApp Image 2024-11-30 at 19.20.39_19871e3f.jpg" alt="Kedarkantha" class="img-fluid rounded shadow-sm mt-3">
+                        </div>
+                        <p>A mesmerizing winter trek in Uttarakhand known for its scenic views and snow trails.</p>
+                        <video controls class="img-fluid rounded shadow-sm mt-3">
+                            <source src="./5895518-uhd_3840_2160_25fps.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h4 class="mt-3">Special Attractions:</h4>
+                        <ul>
+                            <li>Snow-covered trails</li>
+                            <li>Summit sunrise view</li>
+                            <li>Camping under starlit skies</li>
+                        </ul>
+                        <h4>Why Visit?</h4>
+                        <p>One of the best treks for beginners and adventure lovers with breathtaking summit views.</p>
+                        <h4>Price & Duration:</h4>
+                        <p>Price: ₹10,000 | Duration: 6 Days</p>
+                        <h4>Eligibility:</h4>
+                        <p>Suitable for beginners and experienced trekkers, aged 10+.</p>
+                        <button id="btn">Book now</button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="trek">
+                        <h3>lea to ladakh</h3>
+                        <div class="gallery mb-3">
+                            <img src="https://ihplb.b-cdn.net/wp-content/uploads/2014/06/bike-trip-ladakh-750x430.jpg" alt="Kedarkantha" class="img-fluid rounded shadow-sm">
+                            <img src="https://ihplb.b-cdn.net/wp-content/uploads/2023/04/ladakh-bike-tour.jpg" alt="Kedarkantha" class="img-fluid rounded shadow-sm mt-3">
+                            <img src="./Hike Pics/WhatsApp Image 2024-11-30 at 19.20.39_19871e3f.jpg" alt="Kedarkantha" class="img-fluid rounded shadow-sm mt-3">
+                        </div>
+                        <p>A mesmerizing winter trek in Uttarakhand known for its scenic views and snow trails.</p>
+                        <video controls class="img-fluid rounded shadow-sm mt-3">
+                            <source src="./5895518-uhd_3840_2160_25fps.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h4 class="mt-3">Special Attractions:</h4>
+                        <ul>
+                            <li>Snow-covered trails</li>
+                            <li>Summit sunrise view</li>
+                            <li>Camping under starlit skies</li>
+                        </ul>
+                        <h4>Why Visit?</h4>
+                        <p>One of the best treks for beginners and adventure lovers with breathtaking summit views.</p>
+                        <h4>Price & Duration:</h4>
+                        <p>Price: ₹10,000 | Duration: 6 Days</p>
+                        <h4>Eligibility:</h4>
+                        <p>Suitable for beginners and experienced trekkers, aged 10+.</p>
+                        <button id="btn">Book now</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="trek">
+                        <h3>Kedarkantha Trek</h3>
+                        <div class="gallery mb-3">
+                            <img src="./Hike Pics/IMG-20241130-WA0005.jpg" alt="Kedarkantha" class="img-fluid rounded shadow-sm">
+                            <img src="./Hike Pics/IMG-20241130-WA0006.jpg" alt="Kedarkantha" class="img-fluid rounded shadow-sm mt-3">
+                            <img src="./Hike Pics/IMG-20241130-WA0007.jpg" alt="Kedarkantha" class="img-fluid rounded shadow-sm mt-3">
+                        </div>
+                        <p>A mesmerizing winter trek in Uttarakhand known for its scenic views and snow trails.</p>
+                        <video controls class="img-fluid rounded shadow-sm mt-3">
+                            <source src="./5895518-uhd_3840_2160_25fps.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h4 class="mt-3">Special Attractions:</h4>
+                        <ul>
+                            <li>Snow-covered trails</li>
+                            <li>Summit sunrise view</li>
+                            <li>Camping under starlit skies</li>
+                        </ul>
+                        <h4>Why Visit?</h4>
+                        <p>One of the best treks for beginners and adventure lovers with breathtaking summit views.</p>
+                        <h4>Price & Duration:</h4>
+                        <p>Price: ₹10,000 | Duration: 6 Days</p>
+                        <h4>Eligibility:</h4>
+                        <p>Suitable for beginners and experienced trekkers, aged 10+.</p>
+                        <button id="btn">Book now</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="trek">
+                        <h3>Kedarkantha Trek</h3>
+                        <div class="gallery mb-3">
+                            <img src="./Hike Pics/IMG-20241130-WA0005.jpg" alt="Kedarkantha" class="img-fluid rounded shadow-sm">
+                            <img src="./Hike Pics/IMG-20241130-WA0006.jpg" alt="Kedarkantha" class="img-fluid rounded shadow-sm mt-3">
+                            <img src="./Hike Pics/IMG-20241130-WA0007.jpg" alt="Kedarkantha" class="img-fluid rounded shadow-sm mt-3">
+                        </div>
+                        <p>A mesmerizing winter trek in Uttarakhand known for its scenic views and snow trails.</p>
+                        <video controls class="img-fluid rounded shadow-sm mt-3">
+                            <source src="./5895518-uhd_3840_2160_25fps.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h4 class="mt-3">Special Attractions:</h4>
+                        <ul>
+                            <li>Snow-covered trails</li>
+                            <li>Summit sunrise view</li>
+                            <li>Camping under starlit skies</li>
+                        </ul>
+                        <h4>Why Visit?</h4>
+                        <p>One of the best treks for beginners and adventure lovers with breathtaking summit views.</p>
+                        <h4>Price & Duration:</h4>
+                        <p>Price: ₹10,000 | Duration: 6 Days</p>
+                        <h4>Eligibility:</h4>
+                        <p>Suitable for beginners and experienced trekkers, aged 10+.</p>
+                        <button id="btn">Book now</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- Health & Safety Measures Section -->
+<section id="health-measures" class="my-5 py-4 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Health & Safety Measures</h2>
+        <ul class="list-group">
+            <li class="list-group-item">💧 Stay Hydrated: Drink plenty of water to prevent dehydration.</li>
+            <li class="list-group-item">🥾 Proper Footwear: Wear sturdy trekking shoes to avoid injuries.</li>
+            <li class="list-group-item">🩹 First Aid Kit: Carry essential medical supplies for emergencies.</li>
+            <li class="list-group-item">🌞 Sun Protection: Apply sunscreen and wear sunglasses to protect from UV rays.</li>
+            <li class="list-group-item">🥗 Nutritious Food: Eat energy-boosting snacks and maintain a balanced diet.</li>
+            <li class="list-group-item">🗺️ Navigation Tools: Carry a map, compass, or GPS to avoid getting lost.</li>
+            <li class="list-group-item">👕 Layered Clothing: Dress in layers to adjust to changing weather conditions.</li>
+            <li class="list-group-item">⛺ Safe Camping: Choose a secure spot and follow local safety guidelines.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Blogs Section -->
+<section id="blogs" class="my-5 py-4">
+    <div class="container">
+        <h2 class="text-center mb-4">Latest Blogs</h2>
+        <div id="blogs-container" class="mb-4">
+            <!-- Blogs will be dynamically inserted here -->
+        </div>
+        <h3 class="text-center">Share Your Trekking Experience</h3>
+        <form id="blog-form">
+            <input type="text" id="blog-title" class="form-control mb-2" placeholder="Blog Title" required>
+            <input type="text" id="blog-author" class="form-control mb-2" placeholder="Your Name" required>
+            <textarea id="blog-content" class="form-control mb-2" placeholder="Your Blog Content" required></textarea>
+            <button type="submit" class="btn btn-primary">Submit Blog</button>
+        </form>
+    </div>
+</section>
+
+<script>
+    // Function to display blogs from localStorage
+    function displayBlogs() {
+        const blogsContainer = document.getElementById("blogs-container");
+        blogsContainer.innerHTML = ""; // Clear previous blogs
+        const blogs = JSON.parse(localStorage.getItem("blogs")) || [];
+
+        if (blogs.length === 0) {
+            blogsContainer.innerHTML = "<p class='text-center'>No blogs yet. Be the first to share your experience!</p>";
+        } else {
+            blogs.forEach(blog => {
+                const blogElement = document.createElement("div");
+                blogElement.classList.add("p-3", "border", "rounded", "mb-2", "bg-light");
+                blogElement.innerHTML = `<h4>${blog.title}</h4><strong>By ${blog.author}</strong><p>${blog.content}</p>`;
+                blogsContainer.appendChild(blogElement);
+            });
+        }
+    }
+
+    // Event listener for blog submission
+    document.getElementById("blog-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const title = document.getElementById("blog-title").value;
+        const author = document.getElementById("blog-author").value;
+        const content = document.getElementById("blog-content").value;
+
+        const blogs = JSON.parse(localStorage.getItem("blogs")) || [];
+        blogs.push({ title, author, content });
+        localStorage.setItem("blogs", JSON.stringify(blogs));
+
+        displayBlogs(); // Refresh blogs
+        this.reset(); // Clear form fields
+    });
+
+    // Display blogs on page load
+    displayBlogs();
+</script>
+
+<!-- Reviews Section -->
+<section id="reviews" class="my-5 bg-light py-4">
+    <div class="container">
+        <h2 class="text-center mb-4">Hiker Reviews</h2>
+        <div id="reviews-container" class="mb-4">
+            <!-- Reviews will be dynamically inserted here -->
+        </div>
+        <h3 class="text-center">Leave a Review</h3>
+        <form id="review-form">
+            <input type="text" id="reviewer-name" class="form-control mb-2" placeholder="Your Name" required>
+            <textarea id="review-text" class="form-control mb-2" placeholder="Your Review" required></textarea>
+            <button type="submit" class="btn btn-primary">Submit Review</button>
+        </form>
+    </div>
+</section>
+
+<script>
+    // Function to display reviews from localStorage
+    function displayReviews() {
+        const reviewsContainer = document.getElementById("reviews-container");
+        reviewsContainer.innerHTML = ""; // Clear previous reviews
+        const reviews = JSON.parse(localStorage.getItem("reviews")) || [];
+
+        if (reviews.length === 0) {
+            reviewsContainer.innerHTML = "<p class='text-center'>No reviews yet. Be the first to review!</p>";
+        } else {
+            reviews.forEach(review => {
+                const reviewElement = document.createElement("div");
+                reviewElement.classList.add("p-3", "border", "rounded", "mb-2", "bg-white");
+                reviewElement.innerHTML = `<strong>${review.name}</strong><p>${review.text}</p>`;
+                reviewsContainer.appendChild(reviewElement);
+            });
+        }
+    }
+
+    // Event listener for review submission
+    document.getElementById("review-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById("reviewer-name").value;
+        const text = document.getElementById("review-text").value;
+
+        const reviews = JSON.parse(localStorage.getItem("reviews")) || [];
+        reviews.push({ name, text });
+        localStorage.setItem("reviews", JSON.stringify(reviews));
+
+        displayReviews(); // Refresh reviews
+        this.reset(); // Clear form fields
+    });
+
+    // Display reviews on page load
+    displayReviews();
+</script>
+
+    <script>
+    // Function to dynamically adjust text size for smaller devices
+    function adjustLayout() {
+        const windowWidth = window.innerWidth;
+        
+        if (windowWidth <= 480) {
+            // For small screens: reduce text size and adjust content
+            document.body.style.fontSize = '14px';
+        } else if (windowWidth <= 768) {
+            // For tablets: slightly larger font size
+            document.body.style.fontSize = '16px';
+        } else {
+            // For desktops: default font size
+            document.body.style.fontSize = '18px';
+        }
+    }
+
+    // Call the function on page load and resize events
+    window.onload = adjustLayout;
+    window.onresize = adjustLayout;
+
+    // Example: Hide/Show navbar on mobile based on screen size
+    function toggleNavbarOnMobile() {
+        const navLinks = document.getElementById('navbarNav');
+        const windowWidth = window.innerWidth;
+        
+        if (windowWidth <= 767) {
+            navLinks.style.display = 'none';
+        } else {
+            navLinks.style.display = 'flex';
+        }
+    }
+
+    // Call the toggle function on page load and resize events
+    window.onload = toggleNavbarOnMobile;
+    window.onresize = toggleNavbarOnMobile;
+</script>
+
+
+    <!-- Google Map Section -->
+    <section id="map" class="my-5">
+        <h2 class="text-center">Kedarkantha Trek Location</h2>
+        <div id="map-container" style="height: 400px; width: 100%"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="my-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <form>
+                <input type="text" class="form-control mb-3" placeholder="Your Name" required>
+                <input type="email" class="form-control mb-3" placeholder="Your Email" required>
+                <textarea class="form-control mb-3" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn-primary btn-block">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Indian Hikes | All Rights Reserved</p>
+        <p>Follow us on: <a href="#" class="text-white">YouTube</a> | <a href="#" class="text-white">Instagram</a> | <a href="#" class="text-white">Facebook</a></p>
+    </footer>
+
+    <!-- Bootstrap JS and Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" async defer></script>
+
+    <!-- Custom JS -->
+    <script>
+        // 1. Display current date and time
+        function updateTime() {
+            const currentDate = new Date();
+            const timeString = currentDate.toLocaleTimeString();
+            const dateString = currentDate.toLocaleDateString();
+            document.getElementById('current-time').innerHTML = `Current Time: ${timeString} | Date: ${dateString}`;
+        }
+        setInterval(updateTime, 1000); // Update every second
+
+        // 2. Google Maps API to show Kedarkantha location
+        function initMap() {
+            const kedarkantha = { lat: 30.9951, lng: 78.3924 };
+            const map = new google.maps.Map(document.getElementById("map-container"), {
+                zoom: 10,
+                center: kedarkantha,
+            });
+            const marker = new google.maps.Marker({
+                position: kedarkantha,
+                map: map,
+            });
+        }
+
+        // 3. Event Listener for form submission (LocalStorage)
+        const form = document.querySelector("form");
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+            const userName = form.querySelector('input[type="text"]').value;
+            const userMessage = form.querySelector('textarea').value;
+            localStorage.setItem("userName", userName);
+            localStorage.setItem("userMessage", userMessage);
+            alert("Your message has been saved!");
+        });
+
+        // Check if there's data in localStorage on page load
+        window.onload = function() {
+            const savedName = localStorage.getItem("userName");
+            if (savedName) {
+                alert(`Welcome back, ${savedName}!`);
+            }
+        };
+    </script>
+    
+</body>
+</html>

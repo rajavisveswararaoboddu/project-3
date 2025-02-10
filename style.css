@@ -1,0 +1,354 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a4ccf4;
+}
+
+h1, h2, h3, h4 {
+    color: #e26222;
+}
+
+p {
+    color: #0f0c0b;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #eb9072;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #f6b8b8 !important;
+    font-size: 1rem;
+}
+
+.nav-link:hover {
+    color: #f97326 !important;
+}
+
+/* Home Section */
+#home {
+    background-color: #e9ecef;
+    padding: 50px 0;
+}
+
+#home h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#home p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+#home video {
+    max-width: 100%;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Treks Section */
+#treks {
+    padding: 50px 0;
+}
+
+#treks h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.trek {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.trek h3 {
+    font-size: 1.6rem;
+    color: #007bff;
+}
+
+.trek .gallery img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.trek video {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.trek h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.trek ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.trek ul li {
+    margin-bottom: 8px;
+}
+#btn {
+    color:whitesmoke;
+    background-color: #e26222;
+    border-color: #e26222;
+    
+}
+.col-md-6 col-lg-4 mb-4{
+
+}
+
+/* Contact Section */
+#contact {
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+#contact form button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+#contact form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Section */
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #f92424;
+}
+
+footer a:hover {
+    color: #007bff;
+}
+
+/* Map Section */
+#map {
+    margin: 50px 0;
+}
+
+#map-container {
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .trek {
+        margin-bottom: 30px;
+    }
+
+    .trek img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #treks .row {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    #home h1 {
+        font-size: 1.8rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+}
+
+/* 🔹 Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* 🔹 Navbar Base Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 15px 20px;
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar input {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* 🔹 Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff9800;
+}
+
+/* 🔹 Hamburger Menu (Hidden by Default) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+    transition: 0.4s;
+}
+
+/* 🔹 Mobile Styles (Up to 768px) */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #333;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar input {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* 🔹 Tablet View (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    .nav-links li {
+        margin: 0 10px;
+    }
+
+    .navbar input {
+        width: 50%;
+    }
+}
+
+/* 🔹 Laptop & Small Desktops (1025px - 1366px) */
+@media (min-width: 1025px) and (max-width: 1366px) {
+    .navbar {
+        padding: 15px 40px;
+    }
+
+    .nav-links a {
+        font-size: 18px;
+    }
+
+    .navbar input {
+        width: 250px;
+    }
+}
+
+/* 🔹 Large Screens & Landscape Mode (Above 1367px) */
+@media (min-width: 1367px) {
+    .navbar {
+        padding: 15px 60px;
+    }
+
+    .nav-links a {
+        font-size: 20px;
+    }
+
+    .navbar input {
+        width: 300px;
+    }
+}
